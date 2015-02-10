@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              xmlns:myxmlns="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@android:color/white"
+              tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn"
+        android:text="获取照片"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent" />
+    
+    <ImageView
+        android:id="@+id/iv"
+        android:background="@android:color/black"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon"
+        android:layout_width="wrap_content" />
+
+    <cropimage.CircleImageView
+        android:id="@+id/fragment_my_image_user"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        myxmlns:border_width="1dp"
+        myxmlns:border_color="#00000000"
+        android:src="@drawable/icon"/>
+
+
+</LinearLayout>
